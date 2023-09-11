@@ -5,21 +5,28 @@
  *
  * Return: Always 0.
  */
-int main(void)
-{
-	int num;
+int main() {
+    int i, j, k, l;
 
-	for (num = 0; num <= 9; num++)
-	{
-		putchar((num % 10) + '0');
-		if (num == 9)
-			continue;
-		
-		putchar(',');
-		putchar(' ');
-	}
+    for (i = 0; i < 10; i++) {
+        for (j = i + 1; j < 10; j++) {
+            for (k = j + 1; k < 10; k++) {
+                for (l = k + 1; l < 10; l++) {
+                    putchar(i + '0');
+                    putchar(',');
+                    putchar(' ');
+                    putchar(j + '0');
+                    putchar(',');
+                    putchar(' ');
+                    putchar(k + '0');
+                    putchar(',');
+                    putchar(' ');
+                    putchar(l + '0');
+                    putchar('\n');
+                }
+            }
+        }
+    }
 
-	putchar('\n');
-
-	return (0);
+    return 0;
 }

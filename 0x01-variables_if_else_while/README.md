@@ -1,0 +1,1 @@
+This repository provides a comprehensive guide to using if, for, and while loops in the C programming language. It covers the fundamental concepts, syntax, and usage of these control flow structures, enabling programmers to effectively implement conditional statements and iterative processes in their C programs.

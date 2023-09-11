@@ -1,3 +1,7 @@
+/*
+ * File: 9-print_comb.c
+ */
+
 #include <stdio.h>
 
 /**
@@ -5,28 +9,21 @@
  *
  * Return: Always 0.
  */
-int main() {
-    int i, j, k, l;
+int main(void)
+{
+	int num;
 
-    for (i = 0; i < 10; i++) {
-        for (j = i + 1; j < 10; j++) {
-            for (k = j + 1; k < 10; k++) {
-                for (l = k + 1; l < 10; l++) {
-                    putchar(i + '0');
-                    putchar(',');
-                    putchar(' ');
-                    putchar(j + '0');
-                    putchar(',');
-                    putchar(' ');
-                    putchar(k + '0');
-                    putchar(',');
-                    putchar(' ');
-                    putchar(l + '0');
-                    putchar('\n');
-                }
-            }
-        }
-    }
+	for (num = 0; num <= 9; num++)
+	{
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		
+		putchar(',');
+		putchar(' ');
+	}
 
-    return 0;
+	putchar('\n');
+
+	return (0);
 }
